@@ -1,0 +1,10 @@
+[
+  { "title": "Buy groceries", "content": "Milk, eggs, bread, vegetables", "tag": "Shopping" },
+  { "title": "Team meeting", "content": "Discuss Q2 roadmap and priorities", "tag": "Meeting" },
+  { "title": "Learn Mongoose", "content": "Read documentation and try schema validators", "tag": "Work" },
+  { "title": "Workout plan", "content": "Cardio Monday, strength Wednesday and Friday", "tag": "Health" },
+  { "title": "Trip to Lviv", "content": "Book hotel and museum tickets", "tag": "Travel" },
+  { "title": "Pay bills", "content": "Electricity, internet, mobile", "tag": "Finance" },
+  { "title": "App idea: habit tracker", "content": "Track 5 daily habits with streaks", "tag": "Ideas" },
+  { "title": "Submit homework", "content": "GoIT Node.js Express + Mongo task", "tag": "Important" }
+]

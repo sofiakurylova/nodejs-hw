@@ -1,5 +1,5 @@
 import createHttpError from 'http-errors';
-import Note from '../models/note.js';
+import { Note } from '../models/note.js';
 
 export const getAllNotes = async (req, res, next) => {
   try {
@@ -7,7 +7,10 @@ export const getAllNotes = async (req, res, next) => {
 
     const filter = {};
     if (tag) filter.tag = tag;
-    if (search) filter.$text = { $search: search };
+    if (search) {
+      const regex = new RegExp(search, 'i');
+      filter.$or = [{ title: regex }, { content: regex }];
+    }
 
     const skip = (page - 1) * perPage;
 

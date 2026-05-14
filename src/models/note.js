@@ -17,13 +17,14 @@ const noteSchema = new Schema(
       type: String,
       enum: TAGS,
       default: 'Todo',
-      index: true,
     },
   },
   {
     timestamps: true,
   },
 );
+
+noteSchema.index({ tag: 1 });
 
 const Note = model('Note', noteSchema);
 
